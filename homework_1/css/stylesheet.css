@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-size: 18px;
+}
+.container {
+    width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+.center {
+    width: 150px;
+    margin: 0 auto;
+}
+img {
+    width: 140px;
+}
+.info {
+    width: 510px;
+    margin: 5px auto 50px;
+    background: white;
+    box-shadow: 0 0 2px 1px rgba(213, 213, 213, 1);
+}
+.line {
+    border-top: solid 1px #000;
+}
+p {
+    margin-left: 10px;
+}
+.otstup {
+    padding:  30px; 50px; 50px; 50px;
+}
+.repeat-bottom {
+    margin-bottom: 0;
+}
+
+.repeat-top {
+    margin-top: 10px;
