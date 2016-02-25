@@ -1,0 +1,162 @@
+@import "reset.css";
+@font-face {
+    font-family: HelveticaNeue;
+    src: local("HelveticaNeue"),
+    url(../fonts/HelveticaNeue.ttf);
+}
+body {
+    background: url("../img/bg.jpg");
+    background-size: 100%;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+}
+.top_menu {
+    width: 100%;
+    height: 36px;
+    background: url("../img/top_menu_bg.jpg") repeat-x;
+}
+.top_left_menu {
+    display: inline-block;
+}
+.top_menu ul li{
+    float: right;
+    line-height: 36px;
+    padding: 0 10px 0 10px;
+}
+.top_menu ul li:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #4eabda;
+}
+.top_menu ul a:link {
+    color: #60b5ed;
+    text-decoration: none;
+}
+.top_menu ul a:visited {
+    color: #60b5ed;
+    text-decoration: none;
+}
+.flag {
+    float: right;
+    color: white;
+    line-height: 36px;
+    border-left: 1px solid #56a2dc;
+    padding: 0 20px 0 50px;
+    margin-left: 20px;
+    position: relative;
+}
+.flag::before {
+    content: url("../img/flag.png");
+    position: absolute;
+    left: 20px;
+    top: 7px;
+}
+.grad1 {
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    background: url("../img/grad1.png");
+    background-repeat: no-repeat;
+    padding: 0 10px 0 10px;
+    margin-right: 20px;
+    color: white;
+}
+.grad1 a:link {
+    color: white;
+}
+.grad1 a:visited {
+    color: white;
+}
+.content {
+    width: 560px;
+    height: 610px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.title {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 18pt;
+}
+.form {
+    height: 550px;
+    margin-top: 2px;
+    background-color: rgba(0,0,0,0.7);
+}
+.fb {
+    text-align: center;
+    padding-top: 30px;
+}
+.ou {
+    width: 276px;
+    margin: 30px auto;
+    text-align: center;
+    color: #999999;
+    position: relative;
+}
+.ou::before {
+    content: url("../img/hr.jpg");
+    position: absolute;
+    bottom: 3px;
+    right: 155px;
+}
+.ou::after {
+    content: url("../img/hr.jpg");
+    position: absolute;
+    bottom: 5px;
+    left: 155px;
+}
+.form_ou {
+    width: 276px;
+    margin: 0 auto;
+}
+.input_text {
+    width: 276px;
+    height: 36px;
+    background-color: #0f0f0f;
+    margin-bottom: 15px;
+    border: none;
+    padding-left: 10px;
+    color: #cccccc;
+}
+.input_text:focus {
+    background-color: #1b5288;
+    color: #cccccc;
+    border: none;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(44,134,219,1);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(44,134,219,1);
+    box-shadow: 0px 0px 15px 3px rgba(44,134,219,1);
+}
+.input_check {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+span {
+    color: #cccccc;
+    font-size: 11pt;
+    margin-bottom: -5px;
+}
+.button {
+    width: 150px;
+    height: 36px;
+    margin: 25px 0 0 60px;
+    background: linear-gradient(to bottom, #4faddb 0%,#2e7ac4 100%);
+    border-radius: 5px;
+    border: 1px solid #4b9dd7;
+    color: white;
+    font-size: 11pt;
+}
+.terms {
+    width: 315px;
+    margin: 20px auto;
+    color: #cccccc;
+    font-size: 8pt;
+    text-align: center;
+}
