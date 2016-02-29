@@ -1,0 +1,471 @@
+﻿@import "reset.css";
+@font-face {
+    font-family: Lucida Sans Unicode;
+    src: local("Lucida Sans Unicode"),
+    url(../fonts/Lucida_Sans_Unicode.ttf);
+}
+body {
+    font-family: Lucida Sans Unicode;
+    letter-spacing: -0.8px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0c3256;
+}
+.wrapper {
+    width: 912px;
+    margin: 0 auto;
+}
+header {
+    width: 912px;
+    display: inline-block;
+    margin: 22px 0 0 7px;
+}
+.phone {
+    width: 21px;
+    height: 21px;
+    background: linear-gradient(to bottom, rgba(31,103,134,1) 0%, rgba(12,51,87,1) 100%);
+    border-radius: 100%;
+    float: left;
+    text-align: center;
+}
+.number {
+    width: 270px;
+    margin: 2px 0 0 5px;
+    font-size: 13pt;
+    float: left;
+    color: #5e696d;
+}
+.avtoriz {
+    width: 495px;
+    height: 27px;
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(13,52,88,1) 100%);
+    margin: -6px 0 0 306px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.3);
+}
+.log_pass {
+    margin: 1px 0 0 26px;
+    padding-top: 5px;
+    color: white;
+}
+.login {
+    position: relative;
+}
+.login::before {
+    content: url("../img/avtoriz.png");
+    position: absolute;
+    top: 0;
+    left: -19px;
+}
+.log {
+    width: 104px;
+    height: 11px;
+    float: left;
+    font-size: 8pt;
+    line-height: 11px;
+    padding-left: 5px;
+}
+.pass {
+    width: 106px;
+    height: 11px;
+    margin-left: 6px;
+    float: left;
+    font-size: 8pt;
+    line-height: 11px;
+    padding-left: 5px;
+}
+.enter_reg {
+    color: white;
+    float: left;
+    padding: 2px 5px 3px 9px;
+    font-size: 9pt;
+}
+.enter_reg a:link {
+    color: white;
+    text-decoration: none;
+}
+.enter_reg a:visited {
+    color: white;
+    text-decoration: none;
+}
+.remember {
+    color: #bfbfbf;
+    padding: 2px 0 0 16px;
+    float: left;
+    font-size: 9pt;
+    letter-spacing: normal;
+    cursor: pointer;
+}
+.menu_top {
+    width: 75px;
+    height: 19px;
+    border: solid 1px #c1c8cb;
+    border-radius: 15px 15px 15px 15px;
+    float: right;
+    margin: -25px 17px 0 0;
+}
+.menu_top_img {
+    margin: 0 0 0 8px;
+    cursor: pointer;
+}
+.logo {
+    width: 909px;
+    height: 237px;
+    margin: 7px 0 0 0;
+    background: url("../img/logo.png");
+}
+.main_menu {
+    width: 910px;
+    height: 33px;
+    margin: 6px 0 0 0;
+    background: rgba(7,8,9,1);
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #2c345a;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    display: inline-block;
+    float: left;
+}
+.main_menu_ul {
+    height: 33px;
+    margin: 4px 0 0 130px;
+    float: left;
+}
+.main_menu_li {
+    height: 25px;
+    float: left;
+    color: white;
+    line-height: 25px;
+    padding: 0 16px 0 16px;
+    margin-right: 3px;
+    font-size: 10.5pt;
+    text-align: center;
+    letter-spacing: -0.8px;
+}
+.main_menu_li:hover {
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(13,52,88,1) 100%);
+    border-radius: 20px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.korzina {
+    display: inline-block;
+}
+.tovarov {
+    padding: 0 0 0 80px;
+    line-height: 33px;
+    font-size: 9pt;
+    color: #868e92;
+    float: left;
+    position: relative;
+}
+.tovarov::before {
+    content: url("../img/korzina.png");
+    position: absolute;
+    left: 53px;
+    top: 3px;
+}
+.tovarov_summa {
+    padding: 0 14px 0 0;
+    line-height: 33px;
+    font-size: 9pt;
+    color: #0d5a8f;
+    margin: 0 0 0 5px;
+    float: left;
+}
+.na_summu {
+    color: #868e92;
+    line-height: 33px;
+    font-size: 9pt;
+    letter-spacing: -0.4px;
+    float: left;
+}
+.na_summu_summa {
+    font-size: 9pt;
+    line-height: 33px;
+    color: #0d5a8f;
+    margin: 0 0 0 11px;
+    float: left;
+}
+.clearfix {
+    clear: both;
+}
+.forms {
+    margin: 10px 0 0 4px;
+    display: inline-block;
+}
+.form_1 {
+    width: 413px;
+    height: 133px;
+    border-radius: 15px 15px 15px 15px;
+    border: solid 1px #b8b8b9;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    float: left;
+}
+.form_2 {
+    width: 192px;
+    height: 133px;
+    border-radius: 15px 15px 15px 15px;
+    border: solid 1px #b8b8b9;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    margin: 0 0 0 14px;
+    float: left;
+}
+.form_3 {
+    width: 266px;
+    height: 133px;
+    border-radius: 15px 15px 15px 15px;
+    border: solid 1px #b8b8b9;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 0 0 9px;
+    float: left;
+}
+.content {
+    width: 910px;
+    display: inline-block;
+    overflow: hidden;
+}
+.left_menu {
+    width: 183px;
+    float: left;
+}
+.info {
+    width: 526px;
+    height: 625px;
+    background: linear-gradient(to bottom, rgba(229,231,232,1) 0%, rgba(147,167,176,1) 100%);
+    margin: 14px 0 0 8px;
+    float: left;
+}
+.right_menu {
+    width: 185px;
+    float: left;
+}
+.katalog {
+    width: 152px;
+    height: 25px;
+    border-radius: 20px 20px;
+    border: solid 1px #8b979c;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 16px 0 13px 0;
+    padding-left: 27px;
+    line-height: 25px;
+    font-size: 10pt;
+    letter-spacing: -0.4px;
+    position: relative;
+}
+.katalog::before {
+    content: url("../img/brend.png");
+    position: absolute;
+    top: 1px;
+    left: 2px;
+}
+.tovar {
+    width: 140px;
+    height: 180px;
+    text-align: center;
+    line-height: 14px;
+    margin: 14px 6px 9px 22px;
+    float: left;
+}
+.tovar_img {
+    width: 137px;
+    height: 123px;
+    padding-top: 5px;
+    background: white;
+    border-radius: 10px;
+    border: solid 1px #a7b1b4;
+}
+.p1 {
+    color: #206988;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+.p2 {
+    font-size: 10pt;
+    letter-spacing: -0.3px;
+    padding: 0 0 0 5px;
+}
+.p3 {
+    color: #114165;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: 900;
+    letter-spacing: -2px;
+    font-style: oblique;
+    text-align: left;
+    padding: 4px 0 0 37px;
+}
+.p3::after {
+    content: 'грн.';
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+    font-style: oblique;
+    margin: 0 0 0 8px;
+}
+.shini {
+    width: 118px;
+    height: 25px;
+    border-radius: 20px 20px;
+    border: solid 1px #8b979c;
+    margin: 0 0 0 1px;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+    font-size: 10pt;
+    letter-spacing: 0.2px;
+    position: relative;
+}
+.shini::before {
+    content: url("../img/krug.png");
+    position: absolute;
+    top: 1px;
+    left: 4px;
+}
+.shini_ul {
+    font-size: 10pt;
+    text-decoration: none;
+}
+.shini_ul li {
+    padding: 6.8px 0 6.5px 47px;
+    margin-top: -1px;
+    letter-spacing: -0.4px;
+    position: relative;
+}
+.shini_ul li::before {
+    content: url("../img/krug-mini.png");
+    position: absolute;
+    top: 6px;
+    left: 36px;
+}
+.brends {
+    width: 152px;
+    height: 25px;
+    border-radius: 20px 20px;
+    border: solid 1px #8b979c;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 14px 0 14px 9px;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+    font-size: 10pt;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+.brends::before {
+    content: url("../img/brend.png");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    left: 4px;
+}
+.shini2 {
+    width: 105px;
+    height: 26px;
+    border-radius: 20px 20px;
+    border: solid 1px #8b979c;
+    margin: 0 0 0 24px;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+    font-size: 10pt;
+    letter-spacing: 0.2px;
+    position: relative;
+}
+.shini2::before {
+    content: url("../img/krug.png");
+    position: absolute;
+    top: 1px;
+    left: 4px;
+}
+.shini2_ul {
+    font-size: 10pt;
+    text-decoration: none;
+}
+.shini2_ul li {
+    padding: 0 0 10.3px 47px;
+    letter-spacing: -0.4px;
+    position: relative;
+}
+label {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    position: relative;
+}
+input[type="checkbox"] + span {
+    position: absolute;
+    left: -14px;
+    top: 6px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/check.png) no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    opacity: 0;
+}
+input[type="checkbox"]:checked + span {
+    background-position: 0 -11px;
+}
+input[type="button"] {
+    width: 85px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(13,52,88,1) 100%);
+    box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.3);
+    border: none;
+    margin: 8px 0 0 31px;
+    color: white;
+    font-size: 9pt;
+    cursor: pointer;
+}
+.left, .right, .center {
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.bottom {
+    height: 27px;
+    margin: 35px 0 0 0;
+}
+.logos {
+    height: 27px;
+    margin: 0 0 0 117px;
+    display: inline-block;
+}
+.bottom_img {
+    vertical-align: middle;
+    opacity: 0.7;
+    margin: 0 9px 0 0;
+}
+.footer {
+    width: 909px;
+    height: 99px;
+    margin: 26px 0 0 0;
+    background: #213a4d;
+    text-align: center;
+    color: #bec6c9;
+    font-size: 11pt;
+    letter-spacing: 0.3px;
+    padding: 10px 0 0 0;
+}
+.bottom_menu a:link {
+    text-decoration: none;
+    color: #bec6c9;
+}
+.bottom_menu a:visited {
+    color: #bec6c9;
+}
+.bottom_menu a:hover {
+    color: #4792af;
+}
+.copyrite {
+    margin: 16px 0 0 3px;
+    color: #7f4740;
+    font-size: 7pt;
+}
