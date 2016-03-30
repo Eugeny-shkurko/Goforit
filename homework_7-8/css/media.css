@@ -14,8 +14,11 @@
     .container2 {
         margin: 50px 20px 0 -20px;
     }
+    .slider {
+        width: auto;
+    }
     .slider__info {
-        min-width: 18%;
+        width: 42%;
         height: 230px;
         overflow: hidden;
         margin-left: 20px;
@@ -31,7 +34,7 @@
         font-size: 12pt;
     }
     .slider__iphone {
-        margin: -17px 0 0 50px;
+        margin: -17px 20px 0 0;
     }
     .about {
         width: 100%;
@@ -81,7 +84,7 @@
 }
 @media (max-width: 768px) {
     .wrapper1 {
-        height: 700px;
+        height: 600px;
         background-position: top;
         padding: 0 20px;
     }
@@ -127,30 +130,38 @@
         color: white;
         text-decoration: none;
     }
+    .wrapper2 {
+        height: 600px;
+    }
     .container2 {
+        height: 300px;
         margin: 50px 20px 0 -20px;
     }
     .slider__info {
-        width: 27%;
+        width: 45%;
         height: 230px;
         overflow: hidden;
         margin-left: 20px;
     }
     .slider__info--white {
-        font-size: 37pt;
+        font-size: 37px;
     }
     .slider__info--purple{
-        font-size: 15pt;
+        font-size: 15px;
         margin-top: 10px;
     }
     .slider__info--lite {
         display: none;
     }
     .slider__iphone {
-        margin: -17px 0 0 30px;
+        width: 200px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: -17px 30px 0 0;
     }
-    .wrapper2 {
-        height: 500px;
+    .slider__iphone::after {
+        top: 25% ;
+        left: 45%;
     }
     .about {
         height: 100%;
@@ -159,6 +170,7 @@
     .about__1, .about__2, .about__3 {
         width: 70%;
         margin-left: 30px;
+        margin-bottom: 20px;
     }
     .news {
         width: 100%;
@@ -259,10 +271,10 @@
         margin: 50px 20px 0 -20px;
     }
     .slider__info {
-        width: 27%;
+        width: 100%;
         height: 230px;
         overflow: hidden;
-        margin-left: 7%;
+        margin-left: 18%;
     }
     .slider__info--white {
         font-size: 37pt;
@@ -278,7 +290,7 @@
         display: none;
     }
     .wrapper2 {
-        height: 600px;
+        height: 700px;
     }
     .about {
         height: 100%;
